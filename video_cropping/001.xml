@@ -1,0 +1,26 @@
+<annotation>
+	<folder>B</folder>
+	<filename>1.jpg</filename>
+	<path>/media/lym/软件/dataset/协和-20210713整理/detect/B/1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>thyroid</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>509</xmin>
+			<ymin>239</ymin>
+			<xmax>685</xmax>
+			<ymax>382</ymax>
+		</bndbox>
+	</object>
+</annotation>
