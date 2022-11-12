@@ -13,13 +13,16 @@ def video_cropping(root_path,output_path=None):
 
     for root,dirs,files in os.walk(root_path):
         for file in tqdm(files):
-            if (".avi" in file): #对avi文件进行遍历
-                filename,extension = file.split(".") #获取文件名及后缀
+            if (".avi" in file):    #对avi文件进行遍历
+                # 获取文件名及后缀
+                filename,extension = file.split(".")
                 path = os.path.join(root, file)
                 List_boundary = []
                 xmlname = os.path.join(root, filename + ".xml")
-                tree = ET.parse(xmlname) #读取xml注释文件
-                xml_root = tree.getroot() #获取根节点
+                # 读取xml注释文件
+                tree = ET.parse(xmlname)
+                # 获取根节点
+                xml_root = tree.getroot()
                 for ob in xml_root.iter('object'):
                     for bndbox in ob.iter('bndbox'):
                         for xmin in bndbox.iter('xmin'):
@@ -54,6 +57,7 @@ def video_cropping(root_path,output_path=None):
                     ret, frame = cap.read()
                     target = frame[b:d, a-400:c-400]
                     output.write(target)
+                    # 设定时间到达30s时停止
                     if time == 300:
                         break
 
