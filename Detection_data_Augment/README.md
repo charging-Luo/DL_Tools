@@ -10,7 +10,7 @@
 ## 简介
 
 <div align="center">
-  <img src="../readme_raw_pic/augmentation/aug1.jpg" width="600"/>
+  <img src="../A_readme_raw_pic/augmentation/aug1.jpg" width="600"/>
 </div>
 
 ⭐ 1.利用imgaug对影像增强的同时，对keypoint, bounding box进行相应的变换。\
@@ -28,7 +28,7 @@
 
 | JPEGImages 图像数据                              | Annotations xml标注文件                         |
 |----------------------------------------------|---------------------------------------------|
-| ![](../readme_raw_pic/augmentation/jpeg.jpg) | ![](../readme_raw_pic/augmentation/xml.jpg) |
+| ![](../A_readme_raw_pic/augmentation/jpeg.jpg) | ![](../A_readme_raw_pic/augmentation/xml.jpg) |
 
 ## 设置文件路径
 
